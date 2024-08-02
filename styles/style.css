@@ -1,0 +1,38 @@
+:root {
+    --blue-background: rgb(65, 129, 224);
+    --height: 100vh;
+    --width: 100vw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: var(--height);
+    width: var(--width);
+}
+
+.outer-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.bg-image {
+    background-color: var(--blue-background);
+    height: var(--height);
+    width: calc(0.45 * var(--width));
+
+    object-fit: contain;
+}
+
+/* .info-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 150px 60px;
+} */
+
+/* .form-container {} */
