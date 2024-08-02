@@ -13,17 +13,43 @@
             <img src="./images/sign-up-concept-illustration.png" class="bg-image">
         </div>
     
-        <!-- <div class="info-container">
+        <div class="info-container">
             <h1>Sign Up Now !!!</h1>
+
             <div class="form-container">
                 <form action="#" method="post">
-                    <div class="input-fields-container">
-                        <label for="first-name">First Name</label>
-                        <input type="text" name="first_name" id="first_name">
+                    <div class="input-rows-container">
+                        <div class="input-row">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first_name" required>
+
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last_name" required>
+                        </div>
+
+                        <div class="input-row">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required>
+
+                            <label for="contact">PHONE NUMBER</label>
+                            <input type="number" name="contact" id="contact" required>
+                        </div>
+
+                        <div class="input-row">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" required>
+
+                            <label for="confirm_password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm_password" id="confirm_password" required>
+                        </div>
                     </div>
                 </form>
             </div>
-        </div> -->
+
+            <button type="submit">Create Account</button>
+
+            <p>Already have an account? <a href="#">LOG IN</a></p>
+        </div>
     </div>
 
     <script src="./script/script.js"></script>
