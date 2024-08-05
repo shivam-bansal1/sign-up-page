@@ -1,5 +1,6 @@
 :root {
-    --blue-background: rgb(65, 129, 224);
+    --blue-background: #2772db;
+    --light-background: #f7f7f7;
     --height: 100vh;
     --width: 100vw;
 }
@@ -13,6 +14,8 @@
 body {
     height: var(--height);
     width: var(--width);
+
+    background-color: var(--light-background);
 }
 
 .outer-container {
@@ -23,12 +26,12 @@ body {
 .bg-image {
     background-color: var(--blue-background);
     height: var(--height);
-    width: calc(0.45 * var(--width));
+    width: calc(0.40 * var(--width));
 
     object-fit: contain;
 }
 
-.info-container {
+.right-container {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -38,13 +41,69 @@ body {
 .form-container {
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
+}
+
+.input-rows-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .input-row {
     display: flex;
     flex-direction: row;
+    column-gap: 60px;
 }
 
 label {
+    font-size: 14px;
+    color: dimgrey;
     display: block;
+    
+}
+
+input {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 25px;
+}
+
+input:focus {
+    outline: none;
+    border: 1.5px solid var(--blue-background);
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+input[type='password']:invalid {
+    outline: none;
+    border: 1px solid red;
+    border-radius: 4px;
+}
+
+.submit-button {
+    background-color: var(--blue-background);
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 10px 40px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    color: var(--blue-background);
+    font-weight: 700;
+}
+
+a:visited,
+a:active,
+a:link {
+    text-decoration: none;
 }
