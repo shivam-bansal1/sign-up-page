@@ -92,7 +92,7 @@ label {
 }
 
 input {
-    margin-bottom: 20px;
+    margin-top: 20px;
     width: 200px;
     height: 25px;
 }
@@ -104,10 +104,19 @@ input:focus {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-input[type='password']:invalid {
+input[type='password']:focus:invalid {
     outline: none;
     border: 1px solid red;
     border-radius: 4px;
+}
+
+.error-message {
+    display: none;
+    color: red;
+}
+
+input:focus:invalid + .error-message {
+    display: block;
 }
 
 .submit-button {
