@@ -88,11 +88,10 @@ label {
     font-size: 14px;
     color: dimgrey;
     display: block;
-    
+    margin-top: 20px;
 }
 
 input {
-    margin-top: 20px;
     width: 200px;
     height: 25px;
 }
