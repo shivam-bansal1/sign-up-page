@@ -29,8 +29,35 @@ body {
     width: calc(0.40 * var(--width));
 
     object-fit: contain;
+    position: relative;
 }
 
+.bg-image-container {
+    position: relative;
+}
+
+.logo-container {
+    width: calc(0.40 * var(--width));
+    height: 70px;
+    position: absolute;
+    top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+
+    background-color: rgba(0,0,0,0.7);
+}
+
+.logo-container p {
+    color: white;
+    font-size: 36px
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+}
 .right-container {
     display: flex;
     flex-direction: column;
